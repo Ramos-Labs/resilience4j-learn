@@ -15,9 +15,6 @@ class RetryService {
         return callAnotherServer(param)
     }
 
-    /**
-     * retry 에 전부 실패해야 fallback 이 실행
-     */
     private fun fallback(param: String, ex: Exception): String {
         log.info("fallback! your request is $param")
         return "Recovered: $ex"

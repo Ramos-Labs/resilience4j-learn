@@ -23,7 +23,7 @@ extra["springCloudVersion"] = "2023.0.1"
 dependencies {
     implementation("org.springframework.boot:spring-boot-starter-actuator")
     implementation("org.springframework.boot:spring-boot-starter-web")
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin")
+    implementation("org.springframework.boot:spring-boot-starter-aop")
     implementation("org.jetbrains.kotlin:kotlin-reflect")
     implementation("org.springframework.cloud:spring-cloud-starter-circuitbreaker-resilience4j")
     testImplementation("org.springframework.boot:spring-boot-starter-test")

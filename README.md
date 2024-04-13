@@ -68,3 +68,6 @@ management:
     http.server.requests: true
     resilience4j.circuitbreaker.calls: true
 ```
+
+## CircuitBreaker의 상태 변화도
+![image](https://github.com/Ramos-Labs/resilience4j-learn/assets/60968342/86800793-acf1-4d8d-a2b3-206f38a31ae0)

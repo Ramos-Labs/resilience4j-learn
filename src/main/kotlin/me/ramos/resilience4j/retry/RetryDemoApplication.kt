@@ -19,7 +19,7 @@ class RetryDemoApplication {
     fun myRegistryEventConsumer(): RegistryEventConsumer<Retry> {
         return object: RegistryEventConsumer<Retry> {
             override fun onEntryAddedEvent(entryAddedEvent: EntryAddedEvent<Retry>) {
-                log.info("### RegistryEventConsumer.onEntryAddedEvent")
+                log.info("RegistryEventConsumer.onEntryAddedEvent")
                 entryAddedEvent.addedEntry.eventPublisher.onEvent { event -> log.info("event.toString(): $event") }
             }
 
